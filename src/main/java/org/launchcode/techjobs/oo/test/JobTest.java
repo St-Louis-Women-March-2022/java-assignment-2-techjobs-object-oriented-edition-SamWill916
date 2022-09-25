@@ -57,12 +57,12 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData(){
         Job job4 = new Job("Product Tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String testStringJob4 =
-                ("\nID: "+ "_" + job4.getId() + "_" +
-                "\nName: "+ "_" + job4.getName() +"_" +
-                "\nEmployer: "+ "_" + job4.getEmployer() +"_" +
-                "\nLocation: "+ "_" + job4.getLocation() +"_" +
-                "\nPosition Type: "+ "_" + job4.getPositionType() +"_" +
-                "\nCore Competency: "+ "_" + job4.getCoreCompetency() +"_" +
+                ("\nID: "+ job4.getId() +
+                "\nName: "+ job4.getName() +
+                "\nEmployer: "+ job4.getEmployer() +
+                "\nLocation: "+ job4.getLocation() +
+                "\nPosition Type: "+ job4.getPositionType() +
+                "\nCore Competency: "+ job4.getCoreCompetency() +
                 "\n");
         assertEquals(testStringJob4, job4.toString());
     }

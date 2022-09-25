@@ -120,12 +120,12 @@ public class Job {
 //        }
 
         return
-                "\nID: "+ "_" + id + "_" +
-                        "\nName: "+ "_" + name +"_" +
-                        "\nEmployer: "+ "_" + employer +"_" +
-                        "\nLocation: "+ "_" + location +"_" +
-                        "\nPosition Type: "+ "_" + positionType +"_" +
-                        "\nCore Competency: "+ "_" + coreCompetency +"_" +
+                "\nID: "+ this.id +
+                        "\nName: "+ this.name +
+                        "\nEmployer: "+ this.employer +
+                        "\nLocation: "+ this.location +
+                        "\nPosition Type: "+ this.positionType +
+                        "\nCore Competency: "+ this.coreCompetency +
                         "\n";
     }
 
